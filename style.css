@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.header {
+  background-color: bisque;
+}
+
+.header__h1 {
+  text-align: center;
+  font-size: 4rem;
+}
+
+/*----------------- HEADER ------------------------*/
+
+.main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.main__a {
+    text-decoration: none;
+  
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    color: rgb(14, 173, 14);
+    opacity: 0.5;
+    transition: all 0.5s;
+    z-index: 1;
+  }
+  .main__a--ig {
+    bottom: 70px;
+    right: 15px;
+  }
+  
+  .main__a:hover {
+    transform: rotateY(360deg);
+    opacity: 1;
+  }
+
+.salida {
+  background: url(/img/fondo.jpeg), rgba(0, 0, 0, 0.4);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.info {
+    font-size: 2rem;
+    color: white;
+    padding: 20px ;
+  margin: 20px auto;
+  max-width: 500px;
+  border-radius: 15px;
+  background-color: black;
+  
+  
+  animation-name: velocidad;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+
+@keyframes velocidad {
+    0% {
+      text-shadow: 0 0 10px white;
+    }
+    50% {
+      text-shadow: 0 0 2px white, 0 0 5px white, 0 0 7px white;
+    }
+    100% {
+      text-shadow: 0 0 30px white;
+    }
+  }
+
+  .mapa {
+    width: 400px;
+    height: 300px;
+    transition: all 0.5s;
+  }
+
+  .mapa:hover {
+    background-color: black;
+    box-shadow: 10px 10px 30px 0px black;
+  }
+
+/*---------------- DESTINA YPF ------------------*/
+.destino__a {
+  position: relative;
+  background: rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+ 
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  
+}
+
+.salida__h2 {
+  font-size: 3.5rem;
+  color: white;
+
+  padding-top: 30px;
+}
+
+.salida__h3 {
+  font-size: 2.5rem;
+  color: white;
+  margin: 20px 0;
+}
+
+.salida__h4 {
+  font-size: 2rem;
+  color: white;
+  margin: 0 0 0 10px;
+}
+
+/*-----------------DESTINO AXION ----------------*/
+
+.destino__b {
+  position: relative;
+  background: rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+
+  
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  
+}
+
+.destino__h4 {
+    padding-top: 40px;
+}
+
+.clima {
+    margin: 0 auto;
+}
+/*--------------  FOOTER ----------------------*/
+.footer {
+    background-color: bisque;
+    height: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+
+  @media screen and (max-width: 662px) {
+
+    .header__h1 {
+        font-size: 2.3rem;
+    }
+
+    .salida__h2 {
+        font-size: 2rem;
+    }
+
+    .salida__h3 {
+        font-size: 1.5rem;
+    }
+
+    .salida__h4 {
+        font-size: 1.2rem;
+        padding: 36px;
+    }
+
+    .mapa {
+        width: 300px;
+        height: 200px;
+    }
+
+    .info {
+        font-size: 1.2rem;
+        max-width: 300px;
+    }
+  }
